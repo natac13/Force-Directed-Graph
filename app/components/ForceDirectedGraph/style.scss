@@ -1,0 +1,86 @@
+.svg {
+  overflow: visible !important;
+}
+
+.chart {
+  position: relative;
+}
+
+.x-axis, .y-axis {
+  font: 12px Arial sans-serif;
+  stroke: #333;
+
+  line, path, text {
+    stroke: #333;
+  }
+
+  text {
+    fill: #333;
+    letter-spacing: 3px;
+    font-size: 1.2em;
+  }
+}
+
+.x-legend, .y-legend{
+  font-size: 1.3em;
+  font-weight: 800;
+  fill: #333;
+  letter-spacing: 5px
+}
+
+.tooltip {
+  position: absolute;
+  text-align: left;
+  width: auto;
+  height: auto;
+  padding: 3px 5px;
+  font: 1em sans-serif;
+  border: 0px;
+  border-radius: 5px;
+  pointer-events: none;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.2);
+  background-color: $third-color;
+  color: #333;
+}
+
+.fiat {
+  font-weight: 800;
+}
+
+.heats {
+  transition: 200ms all;
+  transform-origin: 50% 50%;
+
+  &:hover {
+    transform: scale(1.3);
+    fill: $contrast;
+  }
+}
+
+.svg-wrapper {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+
+}
+
+.tooltip-text {
+  margin: 0
+}
+
+.nodes {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.flag {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+
+.link {
+  stroke: #FFD700;
+}
